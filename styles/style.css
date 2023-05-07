@@ -101,6 +101,17 @@ a.active,a:hover{
 	display: none;
 }
 
+.socialbar-bottom {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding-top: 100px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
 .socialbar{
 	width: 100%;
 	height: 100px;
@@ -109,6 +120,7 @@ a.active,a:hover{
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
+    padding-bottom: 20px;
 }
 
 .social-links{
@@ -155,6 +167,7 @@ a.active,a:hover{
 .social-links a:hover .fa{
 	color: #fff;
 }
+
 
 .slogan{
 	width: 100%;
@@ -244,15 +257,32 @@ a.active,a:hover{
 	cursor: pointer;
 }
 
-.bottompage {
-	width: 80%;
-	margin: 0 auto;
-	height: 200px;
-	border-radius: 10px;
-	padding-top: 20px;
-	justify-content: center;
-	align-items: center;
-	display: block;
+.video-section {
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+    border-radius: 10px;
+    padding-top: 100px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.video-section iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactSection {
+    width: 80%;
+    margin: 0 auto;
+    height: 200px;
+    border-radius: 10px;
+    padding-top: 80px;
+    justify-content: center;
+    align-items: center;
+    display: block;
 }
 
 .input-row {
@@ -263,18 +293,22 @@ a.active,a:hover{
 	justify-content: center;
 }
 
-.input-row label{
-	display: block;
-	margin-bottom: 3px;
+.input-row label {
+    display: block;
+    margin-bottom: 3px;
+    font-size: 30px;
+    color: azure;
+    font-weight: bold;
 }
 
-.input-row input, .input-row textarea{
-	width: 80%;
-	padding: 10px;
-	border: 0;
-	border-radius: 3px;
-	outline: 0;
-	margin-bottom: 3px;
+.input-row input{
+    width: 50%;
+    padding: 10px;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+    margin-bottom: 3px;
+    display: flex;
 }
 
 .input-row input[type="submit"] {
@@ -287,21 +321,42 @@ a.active,a:hover{
 	background:#002f3a;
 }
 
-.success {
-	width: 50%;
-	background: #9fd2a1;
-	padding: 5px 10px;
-	text-align: center;
-	color: #326b07;
-	border-radius: 3px;
-	margin-top: 10px;
+.bottomSection {
+    width: 80%;
+    margin: 0 auto;
+    height: 500px;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.company-logo {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.logo-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+}
+
+.copyright {
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 100px; 
+    width: 100%;
+    color: #000;
 }
 
 
 
 
-@media (max-width: 1100px){
-	lable.logo{
+    @media (max-width: 1100px) {
+        lable .logo{
 		font-size: 17px;
 		padding-left: 30px;
 	}

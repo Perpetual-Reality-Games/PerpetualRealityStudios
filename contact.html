@@ -1,32 +1,36 @@
-
+﻿
 <!DOCTYPE html>
 
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
+<head>
+	<meta charset="UTF-8">
 
-		<title>
+	<title>
 		Perpetual Reality Studios Inc.
-		</title>
+	</title>
 
-		<!-- Link to the CSS stylesheet -->
-		<link rel="stylesheet" href="styles/style.css">
+	<!-- Link to the CSS stylesheet -->
+	<link rel="stylesheet" href="styles/style.css">
 
-		<!-- meta tag for web browser scaling -->
-		<meta name="viewport" content="width=device-width, intial-scale=1">
+	<!-- Link to SMTP Java Script -->
+	<script src="java/smtpjs.js"></script>
 
-		<!-- Font Awesome CSS icons -->
-		<link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- meta tag for web browser scaling -->
+	<meta name="viewport" content="width=device-width, intial-scale=1">
 
-	</head>
+	<!-- Font Awesome CSS icons -->
+	<link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
+
+</head>
 
 	<body>
+		<!-- Navigation Banner accross the top -->
 		<nav>
 			<input type="checkbox" id="check">
 			<label for="check" class="checkbtn">
 				<i class="fa fa-bars" aria-hidden="true"></i>
 			</label>
-			<label class="logo">PERPETUAL REALITY STUDIOS INC</label>
+			<label class="logo-title">PERPETUAL REALITY STUDIOS INC</label>
 			<ul>
 				<li><a class="active" href="./index.html">HOME</a></li>
 				<li><a href="./about.html">ABOUT</a></li>
@@ -35,17 +39,99 @@
 			</ul>
 		</nav>
 
-        <h1> CONTACT INFORMATION </h1>
-		<h2> FORGE YOUR OWN REALITY </h2>
+		<!-- Social media Icons -->
+		<div class="socialbar">
+			<div class="social-links">
+				<a href="https://www.facebook.com/rawshireTLH/"><i class="fa fa-facebook"></i></a>
+				<a href="https://www.youtube.com/@perpetualrealitystudio9219/featured"><i class="fa fa-youtube-play"></i></a>
+				<a href="https://twitter.com/PerpetualReali2"><i class="fa fa-twitter"></i></a>
+				<a href="https://www.instagram.com/perpetualrealitystudios/"><i class="fa fa-instagram"></i></a>
+				<a href="https://store.steampowered.com/app/1601020/Rawshire_The_Last_Hatchling/"><i class="fa fa-steam"></i></a>
+			</div>
+		</div>
 
-		<p> This is where we will place information about the website, etc. </p>
+		<!-- Slogan or statement -->
+		<div class="slogan">
+			<h2> FORGE YOUR OWN REALITY </h2>
+		</div>
 
-		<img 
-		id="logo"
-		alt= "PR Logo"
-		src= "images/PR_Logo.png" 
-		>
+		<!-- Product Cards -->
+		<div class="cards">
+			<div class="gamecards">
+				<img src="images/rawshire-card.png" class="rawshire-card" alt="">
+				<div class="rawshire-card-body">
+					<h1 class="rashire-card-title">RAWSHIRE</h1>
+					<p class="rawshire-sub-title">The Last Hatchling</p>
+					<p class="rawshire-card-info">Play as the last hatchling of Rawshire and explore the vast mountain side in this adventure collectathon game. Make choices that matter and decide your fate.</p>
+					<a href="https://store.steampowered.com/app/1601020/Rawshire_The_Last_Hatchling/" class="rawshire-card-button">WISHLIST NOW</a>
+				</div>
+			</div>
+		</div>
+
+		<!-- Horizontal Line -->
+		<hr>
+
+		<!-- Contact information -->
+		<div class="contactSection">
+			<form method="post" name="emailContact">
+				<div class="input-row">
+					<label>JOIN THE COMMUNITY</label>
+					<input class="email-input" id="userEmail" type="email" placeholder="Enter Your Email to Join..." name="userEmail" required>
+				</div>
+				<div class="input-row">
+					<input class="submit-input" type="submit" id="sendBTN" name="send" value="Submit" required>
+				</div>
+			</form>
+		</div>
+
+		<!-- Video on Wepage -->
+		<div class="video-section">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/UhG0bhpP2x8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</div>
+
+		<!-- Horizontal Line -->
+		<hr>
+
+		<!-- Bottom of Wepage -->
+		<div class="bottomSection">
+			<div class="company-logo">
+				<img class="logo-img" src="images/PR_Logo.png">
+				<!-- Small Social media Icons -->
+				<div class="socialbar-bottom">
+					<div class="social-links">
+						<a href="https://www.facebook.com/rawshireTLH/"><i class="fa fa-facebook"></i></a>
+						<a href="https://www.youtube.com/@perpetualrealitystudio9219/featured"><i class="fa fa-youtube-play"></i></a>
+						<a href="https://twitter.com/PerpetualReali2"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.instagram.com/perpetualrealitystudios/"><i class="fa fa-instagram"></i></a>
+						<a href="https://store.steampowered.com/app/1601020/Rawshire_The_Last_Hatchling/"><i class="fa fa-steam"></i></a>
+					</div>
+				</div>
+				<p class="copyright" >© Perpetuel Reality Studios Inc. All Rights Reserved.</p>
+			</div>
+		</div>
 
 	</body>
 </html>
+
+<script>
+	var btn = document.getElementById('sendBTN');
+	btn.addEventListener('click', function (email) {
+		email.preventDefault()
+		console.log('Email Opened');
+		const userEmail = document.getElementById('userEmail').value;
+		const subject = "New Community Member for Perpetuel Reality Studios"
+
+		const encodedSubject = encodeURIComponent(subject)
+		const encodedBody = encodeURIComponent(subject + `
+
+			Email:    ` + userEmail +
+			`
+
+			
+`)
+
+		const link = `mailto:perpetualrealitystudio@gmail.com?subject=${encodedSubject}&body=${encodedBody}`
+		window.open(link, '_blank')
+	})
+</script>
 
