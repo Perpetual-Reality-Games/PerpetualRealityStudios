@@ -502,16 +502,16 @@ a.active,a:hover{
     }
 
     h2 {
-        font-size: 20px;
+        font-size: 15px;
         color: white;
     }
 
     .gamecards {
-        width: 380px;
-        height: 380px;
+        width: 280px;
+        height: 280px;
         border-radius: 20px;
         overflow: hidden;
-        border: 6px solid #333;
+        border: 4px solid #333;
         position: relative;
     }
 }
