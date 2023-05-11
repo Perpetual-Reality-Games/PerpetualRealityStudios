@@ -428,9 +428,12 @@ a.active,a:hover{
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
     .checkbtn {
         display: block;
+    }
+    nav label.pagetitle {
+        font-size: 12px;
     }
 
     ul {
@@ -464,23 +467,23 @@ a.active,a:hover{
     }
 
     .social-links a {
-        width: 30px;
-        height: 30px;
+        width: 40px;
+        height: 40px;
         text-align: center;
         text-decoration: none;
         color: #000;
         box-shadow: 0 0 20px 10px rgba(0,0,0,0.05);
-        margin: 0 10px;
+        margin: 0 20px;
         border-radius: 50%;
         position: relative;
         overflow: hidden;
     }
 
-        .social-links a .fa {
-            font-size: 15px;
-            line-height: 30px;
-            position: relative;
-            z-index: 10;
-            transition: color 0.5s;
-        }
+    .social-links a .fa {
+        font-size: 20px;
+        line-height: 40px;
+        position: relative;
+        z-index: 10;
+        transition: color 0.5s;
+    }
 }
