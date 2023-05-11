@@ -43,9 +43,9 @@ hr{
 	margin: auto;
 }
 
-#logotitle{
-	width: 300px;
-	height: auto;
+#pagetitle{
+    width: 300px;
+    height: auto;
 }
 
 nav{
@@ -428,7 +428,7 @@ a.active,a:hover{
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 360px) {
     .checkbtn {
         display: block;
     }
