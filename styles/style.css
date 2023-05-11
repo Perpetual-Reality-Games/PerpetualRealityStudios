@@ -420,6 +420,20 @@ a.active,a:hover{
         transition: color 0.5s;
     }
 
+    h2 {
+        font-size: 25px;
+        color: white;
+    }
+
+    .gamecards {
+        width: 450px;
+        height: 450px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 6px solid #333;
+        position: relative;
+    }
+
     .video-section iframe {
         display: block;
         margin-left: auto;
@@ -485,5 +499,19 @@ a.active,a:hover{
         position: relative;
         z-index: 10;
         transition: color 0.5s;
+    }
+
+    h2 {
+        font-size: 20px;
+        color: white;
+    }
+
+    .gamecards {
+        width: 380px;
+        height: 380px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 6px solid #333;
+        position: relative;
     }
 }
