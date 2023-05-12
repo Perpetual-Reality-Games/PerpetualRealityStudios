@@ -637,11 +637,11 @@ a.active,a:hover{
 
     ul {
         position: fixed;
-        width: 100%;
+        width: 110%;
         height: 100vh;
         background: var(--second-color);
         top: 80px;
-        left: -100%;
+        left: -110%;
         text-align: center;
         position: absolute;
         z-index: 2;
