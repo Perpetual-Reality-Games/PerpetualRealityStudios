@@ -1,0 +1,20 @@
+smtp.gmail.com
+
+project.probable@gmail.com
+websiteEmailer99!
+
+perpetualrealitystudio@gmail.com
+
+pphjvfiwngaerrwp
+
+		//Email.send({
+		//	Host: "smtp.gmail.com",
+		//	Username: "perpetualrealitystudio@gmail.com",
+		//	Password: "pphjvfiwngaerrwp",
+		//	To: 'perpetualrealitystudio@gmail.com',
+		//	From: "perpetualrealitystudio@gmail.com",
+		//	Subject: "This is the subject",
+		//	Body: "And this is the body"
+		//}).then(
+		//	message => alert(message)
+		//);
