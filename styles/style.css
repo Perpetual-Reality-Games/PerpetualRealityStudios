@@ -629,7 +629,7 @@ a.active,a:hover{
         display: block;
     }
     nav{
-        width: 100%;
+        width: 110%;
     }
     nav label.pagetitle {
         font-size: 12px;
