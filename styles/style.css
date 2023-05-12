@@ -73,6 +73,7 @@ nav {
     width: 100%;
     border-radius: 4px;
     border-bottom: 2px solid var(--tertiary-color);
+    /*border-right: 20px solid var(--tertiary-color);*/
 }
 
 label.pagetitle {
@@ -336,7 +337,6 @@ a.active,a:hover{
     display: block;
     margin-bottom: 3px;
     font-size: 30px;
-    color: azure;
     font-weight: bold;
     /* Set the background color */
     background: linear-gradient(-45deg, var(--alt-color2), var(--alt-color3));
@@ -436,10 +436,10 @@ a.active,a:hover{
 	nav ul li a{
 		font-size: 20px;
 	}
-	a:hover,a.active{
-		background: none;
-		color: var(--alt-color2);
-	}
+    a:hover, a.active {
+        background: none;
+        color: var(--tertiary-color);
+    }
     nav label.pagetitle {
         font-size: 16px;
     }
@@ -539,13 +539,13 @@ a.active,a:hover{
         line-height: 30px;
     }
 
-        nav ul li a {
-            font-size: 20px;
-        }
+    nav ul li a {
+        font-size: 20px;
+    }
 
     a:hover, a.active {
         background: none;
-        color: #0082e6;
+        color: var(--tertiary-color);
     }
 
     nav label.pagetitle {
@@ -629,7 +629,7 @@ a.active,a:hover{
         display: block;
     }
     nav{
-        width: 110%;
+        width: auto;
     }
     nav label.pagetitle {
         font-size: 12px;
@@ -664,7 +664,7 @@ a.active,a:hover{
 
     a:hover, a.active {
         background: none;
-        color: #0082e6;
+        color: var(--tertiary-color);
     }
 
     #check:checked ~ ul {
@@ -723,8 +723,14 @@ a.active,a:hover{
         overflow: hidden;
     }
 
+    .input-row label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 20px;
+    }
+
     .input-row input {
-        width: 80%;
+        width: 85%;
         padding: 10px;
         border: 0;
         border-radius: 3px;
